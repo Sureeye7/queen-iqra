@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <nav>
     <div class="box">
         <div class="minudiv">
             <img class="minu" src="minu.png.png" alt="">
@@ -55,11 +56,16 @@
         <div class="bilowdiv">
         <button class="bilow" onclick="bilow()">bilow</button>
     </div>
+    </nav>
 </body>
 </html>
 <style>
     body{
         margin: 0;
+    }
+    nav{
+        width: auto;
+        height: auto;
     }
     .box{
         display: flex;
@@ -74,12 +80,10 @@
         box-shadow: 5px 5px 5px;
     }
     .salandiv{
-        border: 1px solid black;
         width: 85vh;
 
     }
     .ciid{
-        border: 1px solid black;
         width: 85vh;
     }
     .bilow{
@@ -124,7 +128,6 @@
     }
     .sawirandiv{
         display: flex;
-        border: 1px solid black;
         width: 80vh;
         animation: iqra 5s infinite linear;
     }
@@ -144,7 +147,6 @@
         margin: 5px;
     }
     .bilowdiv{
-        background-color: yellow;
     }
 </style>
 <script>

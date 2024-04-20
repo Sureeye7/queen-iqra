@@ -4,182 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .box{
+            display: flex;
+            background-color: rgb(149, 169, 187);
+            justify-content: space-between;
+            box-shadow: 5px 5px 7px;
+        }
+        .minu{
+            width: 50px;
+        }
+        .sureeye{
+            
+        }
+        .link{
+            border: 1px solid blue;
+            box-shadow: 7px 7px 7px;
+            background-color: black;
+            color: white;
+        }
+        .linkdiv{
+            
+            margin-right: 5vh;
+        }
+        .sureeye7{
+            font-size: 15px;
+        }
+        ul{
+        }
+        .somali{
+            height: 5vh;
+            width: 15vh;
+        }
+        .somali, .link{
+            display: block;
+        }
+        .somali{
+            background-color: blue;
+            color: white;
+            
+        }
+    </style>
+    <script>
+        function german() {
+            alert("Wali lama borograamin")
+        }
+    </script>
 </head>
 <body>
-    <nav>
     <div class="box">
         <div class="minudiv">
-            <img class="minu" src="minu.png.png" alt="">
-        </div>
-        <div class="raadidiv">
-            <a href="">
-            <input id="search" class="raadiinput" type="text"
-            placeholder="Raadi">
-            </a>
-            <button onclick="searchImages()" class="raadibutt">Raadi</button>
-            <div id="imageContainer"></div>
-        </div>
-        <div>
-            <a class="link" href="">Guriga</a>
-        <a class="link" href="">Caawi</a>
-        </div>
+        <img class="minu" src="minu.png.png" alt="">
+        <i>lacaso</i>
     </div>
-    <br>
-    <div class="all2">
-        <div class="salandiv">
-            <h1>Ku soo dhawaaw</h1>
-            <h2>Magacaygu waa Abdiaziz waa website kii 
-                ugu horeeyey aan internetka 
-                soo galiyo aniga oo borogaraamiyay wakhti
-                sidaan u borogramiyay hadii aad rabto inaad aragto 
-                <a href="">Halkan Guji</a>
-            </h2>
+    <div class="sureeyediv">
+        <h1 class="sureeye">Adam W</h1>
+    </div>
+    <div class="linkdiv">
+    <button onclick="somali()" class="somali"> somali</button>
+    <ul id="link">
+    <a onclick="german()" class="link" href="">German</a>
+    <a onclick="german()" class="link" href="">arabic</a>
+    <a onclick="german()" class="link" href="">English</a>
+    </ul>
+    </div>
+    </div>
+    <div>
+        <div class="ku">
+        <h1>Ku soo dhawaaw</h1>
         </div>
-        <div class="sawirandiv">
+        <div class="digniin">
+        <strong>Digniin</strong>
+        <h2>bogaan lama gali karo ilaa aan
+            anigu bixiyo moyee waana gacan 
+            ku samays oo programm ah
+            walina internetka lama soo galin
+            hadii aad rabto midhaha oo ka samaysan yahay
+            <a href="">Halkaan guji</a>
+        </h2>
+        <h6>Hadii aad rabto inaad tagto websit caadi 
+            ah <a class="sureeye7" href="">Halkan guji</a>
+        </h6>
+        </div>
+        <div class="iqradiv">
             <img class="iqra" src="inqra.JPG" alt="">
-            <img class="iqra" src="abit iyo adeer.jpg" alt="">
             <img class="iqra" src="abti.jpg" alt="">
-            <i>ciid wanaagsan abti iyo adeerba</i>
+            <img class="iqra" src="abit iyo adeer.jpg" 
+            alt="">
+            <i>Ciid Mubaarik abti iyo adeer</i>
         </div>
-        <div class="ciid">
-            <strong>
-                bogan waa pravet shakhsi ahaaneed 
-                waa gacan ku samays
-                lamana heli karo ilaa aan anigu dhiibo moyee
-                Hadii aad rabto inaad fedback bixiso ama rayigaagu 
-                isoo gaadho Fadlan <a href="indexfed.html">Halkan guji</a>
-            </strong>
-            <p>Hadii aad rabto inaad aado <a href="">website
-                aan gacan ku samays ahayn guji halkaan
-            </a></p>
+        <div class="qoraal">
+            <p>Hadii aad rabto inaad Faalo
+                ka bixiso websitkaan 
+            </p>
+            <button class="butt" onclick="butt()">Sii Soco</button>
         </div>
-        <div class="bilowdiv">
-        <button class="bilow" onclick="bilow()">bilow</button>
+        
     </div>
-    </nav>
 </body>
 </html>
-<style>
-    body{
-        margin: 0;
-        padding: 0;
-        background-color: rgb(212, 201, 201);
-        font-family: arial, sans-serif;
-    }
-    strong,h1, p, h2,  strong{ 
-        border: 1px solid black;
-        overflow: hidden;
-        box-shadow: 5px 5px 5px;
-    }
-    .all2{
-        position: absolute;
-        left: 35%;
-    }
-    .box{
-        display: flex;
-        background-image: url(window.png);
-        justify-content: space-between;
-        padding: 2vh;
-        box-shadow: 5px 5px 15px;
-    }
-    .minu{
-        width: 50px;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px;
-    }
-    .salandiv{
-        width: 85vh;
-
-    }
-    .ciid{
-        width: 85vh;
-    }
-    .bilow{
-        background-color: rgb(22, 11, 126);
-        color: white;
-        height: 5vh;
-        width: 15vh;
-    }
-    h2{
-        hei
-    }
-    .bilowdiv{
-        text-align: center;
-    }
-    .bilow:hover{
-        background-color: green;
-    }
-    @keyframes minu {
-        10%{
-            background-image: url(inqra.JPG);
-        }
-        50%{
-            background-image: url(lacaso.png.JPG);
-        }
-    }
-    .link{
-        text-decoration: none;
-        font-size: 29px;
-        margin: 5px;
-    }
-    .raadiinput{
-        height: 25px;
-        text-align: center;
-    }
-    .raadibutt{
-        background-color: blue;
-        color: white;
-        height: 29px;
-    }
-    h1{
-        text-align: center;
-        background-color: ;
-        color: blue;
-        margin: 0;
-    }
-    .sawirandiv{
-        display: flex;
-        width: 80vh;
-        animation: iqra 5s infinite linear;
-    }
-    @keyframes iqra {
-        10%{
-            background-color: yellow;
-        }
-        6%{
-            background-color: green;
-     }
-     5%{
-            background-color: blue;
-     }
-    }
-    .iqra{
-        width: 20vh;
-        margin: 5px;
-    }
-</style>
 <script>
-    function bilow() {
-        alert("wax rayi ah ma hayo oon gadaal ku prograamiyo")
+    function somali() {
+  var element = document.getElementById("link");
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+}
+</script>
+<script>
+    function butt() {
+    window.open("indexfed.html");
     }
 </script>
+<style>
+    .ku, .digniin{
+        text-align: center;
+    }
+    .digniin{
+        color: black;
+        animation: digniin 2s infinite linear;
+    }
+    @keyframes digniin { 
+    5%
+    {
+        color: red;
+    }
+    4%
+    3%
+ }
 
-    <script>
-        function searchImages() {
-            var searchName = document.getElementById("search").value.toLowerCase();
-            var imageContainer = document.getElementById("imageContainer");
-            imageContainer.innerHTML = "";
-
-            var data = [
-                { name: "iqra", image: "iqra.JPG" },
-                { name: "abti iyo adeer", image: "abti iyo adeer.jpg" },
-                { name: "abti", image: "abti.jpg" },
-            ];
-
-            data.forEach(function(item) {
-                if (item.name.toLowerCase().includes(searchName)) {
-                    var imgElement = document.createElement("img");
-                    imgElement.src = item.image;
-                    imgElement.alt = item.name;
-                    imageContainer.appendChild(imgElement);
-                }
+    .iqra{
+    width: 35vh;
+    }
+    .iqradiv{
+        text-align: center;
+        animation: iqra 2s infinite linear;
+    }
+    @keyframes iqra {
+        0%
+        {
+            background-color: black;
+        }
+        5%
+        {
+            background-color: green;
+        }
+        2%
+        {
+            background-color: yellow;
+        }
+        7%
+        {
+        }
+    }
+    .iqradiv:hover{
+        background-color: green;
+        background-color: yellow;
+    }
+    .qoraal{
+        text-align: center;
+    }
+    p{
+        font-size: x-large;
+    }
+    .butt{
+        background-color: blue;
+        color: white;
+        padding: 2vh;
+        width: 19vh;
+    }
+    .butt:hover{
+        background-color: green;
+    }
+    
+</style> 

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="minudiv">
+            <img class="minu" src="minu.png.png" alt="">
+        </div>
+        <div class="raadidiv">
+            <a href="">
+            <input id="search" class="raadiinput" type="text"
+            placeholder="Raadi">
+            </a>
+            <button onclick="searchImages()" class="raadibutt">Raadi</button>
+            <div id="imageContainer"></div>
+        </div>
+        <div>
+            <a class="link" href="">Guriga</a>
+        <a class="link" href="">Caawi</a>
+        </div>
+    </div>
+    <br>
+    <div class="all2">
+        <div class="salandiv">
+            <h1>Ku soo dhawaaw</h1>
+            <i>Magacaygu waa Abdiaziz waa website kii 
+                ugu horeeyey aan internetka 
+                soo galiyo aniga oo borogaraamiyay wakhti
+                sidaan u borogramiyay hadii aad rabto inaad aragto 
+                <a href="">Halkan Guji</a>
+            </i>
+        </div>
+        <div class="sawirandiv">
+            <img class="iqra" src="inqra.JPG" alt="">
+            <img class="iqra" src="abit iyo adeer.jpg" alt="">
+            <img class="iqra" src="abti.jpg" alt="">
+            <i>ciid wanaagsan abti iyo adeerba</i>
+        </div>
+        <div class="ciid">
+            <strong>
+                bogan waa pravet shakhsi ahaaneed 
+                waa gacan ku samays
+                lamana heli karo ilaa aan anigu dhiibo moyee
+                Hadii aad rabto inaad fedback bixiso ama rajigaagu 
+                isoo gaadho Fadlan <a href="">Halkan guji</a>
+            </strong>
+            <p>Hadii aad rabto inaad aado <a href="">website
+                aan gacan ku samays ahayn guji halkaan
+            </a></p>
+        </div>
+        <div class="bilowdiv">
+        <button class="bilow" onclick="bilow()">bilow</button>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        margin: 0;
+    }
+    .box{
+        display: flex;
+        background-image: url(window.png);
+        justify-content: space-between;
+        padding: 2vh;
+        box-shadow: 5px 5px 15px;
+    }
+    .minu{
+        width: 50px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px;
+    }
+    .salandiv{
+        border: 1px solid black;
+        width: 85vh;
+
+    }
+    .ciid{
+        border: 1px solid black;
+        width: 85vh;
+    }
+    .bilow{
+        background-color: rgb(22, 11, 126);
+        color: white;
+        height: 5vh;
+        width: 15vh;
+    }
+    .bilowdiv{
+        text-align: center;
+    }
+    .bilow:hover{
+        background-color: green;
+    }
+    @keyframes minu {
+        10%{
+            background-image: url(inqra.JPG);
+        }
+        50%{
+            background-image: url(lacaso.png.JPG);
+        }
+    }
+    .link{
+        text-decoration: none;
+        font-size: 29px;
+        margin: 5px;
+    }
+    .raadiinput{
+        height: 25px;
+        text-align: center;
+    }
+    .raadibutt{
+        background-color: blue;
+        color: white;
+        height: 29px;
+    }
+    h1{
+        text-align: center;
+        background-color: ;
+        color: blue;
+        margin: 0;
+    }
+    .sawirandiv{
+        display: flex;
+        border: 1px solid black;
+        width: 80vh;
+        animation: iqra 5s infinite linear;
+    }
+    @keyframes iqra {
+        10%{
+            background-color: yellow;
+        }
+        6%{
+            background-color: green;
+     }
+     5%{
+            background-color: blue;
+     }
+    }
+    .iqra{
+        width: 20vh;
+        margin: 5px;
+    }
+    .bilowdiv{
+        background-color: yellow;
+    }
+</style>
+<script>
+    function bilow() {
+        alert("wax rayi ah ma hayo oon gadaal ku prograamiyo")
+    }
+</script>
+
+    <script>
+        function searchImages() {
+            var searchName = document.getElementById("search").value.toLowerCase();
+            var imageContainer = document.getElementById("imageContainer");
+            imageContainer.innerHTML = "";
+
+            var data = [
+                { name: "iqra", image: "iqra.JPG" },
+                { name: "abti iyo adeer", image: "abti iyo adeer.jpg" },
+                { name: "abti", image: "abti.jpg" },
+            ];
+
+            data.forEach(function(item) {
+                if (item.name.toLowerCase().includes(searchName)) {
+                    var imgElement = document.createElement("img");
+                    imgElement.src = item.image;
+                    imgElement.alt = item.name;
+                    imageContainer.appendChild(imgElement);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

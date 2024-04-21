@@ -8,28 +8,42 @@
         body{
             font-family: Arial, sans-serif;
             margin: 0;
+            background-image: url(window.png);
         }
-        .box{
+        .box{ 
             display: flex;
-            background-color: rgb(149, 169, 187);
+            background-color: red;
             justify-content: space-between;
             box-shadow: 5px 5px 7px;
+            position: fixed;
+            height: 10vh;
+            width: 100%;
+            margin: 0;
         }
         .minu{
             width: 50px;
         }
         .sureeye{
-            
+            margin: 5px;
+            font-size: 25px;
+        }
+        .sureeyediv{
+            margin-top: 5vh;
         }
         .link{
+            display: none;
             border: 1px solid blue;
             box-shadow: 7px 7px 7px;
             background-color: black;
             color: white;
         }
+        .somali, .link{
+            display: block;
+        }
         .linkdiv{
             
             margin-right: 5vh;
+            margin-top: 2vh;
         }
         .sureeye7{
             font-size: 15px;
@@ -37,10 +51,10 @@
         ul{
         }
         .somali{
-            height: 3vh;
+            height: 5vh;
             width: 15vh;
         }
-        .somali, .link{
+        .linkul, .link{
             display: block;
         }
         .somali{
@@ -63,19 +77,27 @@
     </div>
     <div class="sureeyediv">
         <a class="sureeye" href="indexacc.html">
+            Account
         </a>
-        <a class="sureeye" href=""></a>
+        <a class="sureeye" href="">Team</a>
     </div>
     <div class="linkdiv">
     <button onclick="somali()" class="somali"> somali</button>
-    <ul id="link">
+    <ul class="linkul" id="link">
     <a onclick="german()" class="link" href="">German</a>
     <a onclick="german()" class="link" href="">arabic</a>
     <a onclick="german()" class="link" href="">English</a>
     </ul>
     </div>
     </div>
-    <div>
+    <div class="box2">
+        <div class="fireworks">
+            <div class="firework"><i>iid Mubarik</i></div>
+            <div class="firework"><i>ciid mubarik</i></div>
+            <div class="firework"><i>ciid mubarik</i></div>
+            <div class="firework"><i>ciid Mubaarik</i></div>
+            <div class="firework"><i>ciid mubaarik</i></div>
+          </div>
         <div class="ku">
         <h1>Ku soo dhawaaw</h1>
         </div>
@@ -121,6 +143,57 @@
     }
 </script>
 <style>
+     .fireworks {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.firework {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: radial-gradient(circle,, transparent);
+  border-radius: 50%;
+  animation: explode 1s ease-out infinite;
+}
+
+.firework:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.firework:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.firework:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.firework:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.firework:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(50);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+    left: -200px;
+    right: -200px;
+  }
+}
+    .box2{
+        position: absolute;
+        top: 15%;
+    }
     .ku, .digniin{
         text-align: center;
     }
